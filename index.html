@@ -8,9 +8,67 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https:cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-  
-  
+<body class="bg-danger">
+  <!--FORM-->
+  <div class="container text-center mt-5">
+    <h1 class="text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+  </div>
+  <div class="container bg-secondary rounded-2">
+    <div class="row">
+      <div class="col-4 py-3">
+        <label for="name-input" class="form-label text-center">Nome e Cognome</label>
+        <input type="text" class="form-control" placeholder="Inserisci Nome" id="name-input">
+      </div>
+      <div class="col-4 py-3">
+        <label for="km-input" class="form-label text-center">Km da percorrere</label>
+        <input type="text" class="form-control" placeholder="Inserisci km da percorrere" id="km-input">
+      </div>
+      <div class="col-4 py-3">
+        <label for="age-input" class="form-label text-center">Fascia d'età</label>
+        <select class="form-select" id="age-input">
+          <option>Seleziona Età</option>
+          <option value="1">Maggiorenne</option>
+          <option value="2">Minorenne</option>
+          <option value="3">Over 65</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center py-3 gap-5">
+        <button type="button" class="btn btn-success border generate">Genera</button>
+        <button type="button" class="btn btn-danger border">Annulla</button>
+      </div>
+    </div>
+  </div>
+
+  <!--TICKET-->
+  <div class="container mt-5">
+    <h1 class="text-white text-center">IL TUO BIGLIETTO</h1>
+    <div class="container">
+      <h2><strong>DETTAGLIO PASSEGGERI</strong></h2>
+      <div class="row bg-white rounded-2 mt-4">
+        <div class="col-3 mt-2">
+          <h3 id="name"></h3>
+        </div>
+        <div class="col-3 mt-2">
+          <h4><strong>Offerta</strong></h4>
+          <h4 id="discount"></h4>
+        </div>
+        <div class="col-2 mt-2">
+          <h4><strong>Carrozza</strong></h4>
+          <h4 id="car-number"></h4>
+        </div>
+        <div class="col-2 mt-2">
+          <h4><strong>Codice CP</strong></h4>
+          <h4 id="cp-code"></h4>
+        </div>
+        <div class="col-2 mt-2">
+          <h4><strong>Prezzo biglietto</strong></h4>
+          <h4 id="ticket-price"></h4>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
