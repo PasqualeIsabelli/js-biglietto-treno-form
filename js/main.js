@@ -41,9 +41,5 @@ generateBtn.addEventListener('click', function () {
 
 //Click Event Annulla
 resetBtn.addEventListener('click', function () {
-  document.getElementById("name").value = "";
-  document.getElementById("discount").value = "";
-  document.getElementById("car-number").value = "";
-  document.getElementById("cp-code").value = "";
-  document.getElementById("ticket-price").value = "";
+  window.location.reload();
 });
